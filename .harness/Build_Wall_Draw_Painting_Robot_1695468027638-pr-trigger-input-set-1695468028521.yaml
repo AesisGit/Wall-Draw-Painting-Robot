@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Wall_Draw_Painting_Robot_1695468027638-pr-trigger-input-set
+  identifier: Build_Wall_Draw_Painting_Robot_1695468027638prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Wall_Draw_Painting_Robot_1695468027638
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
