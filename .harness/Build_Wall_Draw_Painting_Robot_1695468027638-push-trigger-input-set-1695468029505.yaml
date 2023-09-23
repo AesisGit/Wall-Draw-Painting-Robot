@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Wall_Draw_Painting_Robot_1695468027638-push-trigger-input-set
+  identifier: Build_Wall_Draw_Painting_Robot_1695468027638pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Wall_Draw_Painting_Robot_1695468027638
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
