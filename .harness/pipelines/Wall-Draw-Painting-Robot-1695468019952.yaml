@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_Wall_Draw_Painting_Robot_1695468027638
+  name: Build Wall-Draw-Painting-Robot
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1695467906167
+        repoName: AesisGit/Wall-Draw-Painting-Robot
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
